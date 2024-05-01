@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <script src="https://kit.fontawesome.com/c8bf7962f3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido creativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Favicon .png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Contenido<span>Creativo</span></a>
+            <div class="toggle"></div>
+        </header>
+        <img src="girl.png" alt="logo" class="girl">
+        <div class="content">
+            <div class="contentBx">
+                <h4>Hola!</h4>
+                <h2>Somos <span>Contenido Creativo</span></h2>
+                <h3></h3>
+                <p>En Contenido Creativo, nos dedicamos a transformar tus ideas en contenido cautivador y efectivo. Nuestro equipo de creativos está aquí para ayudarte a transmitir tu mensaje de manera clara, impactante y memorable. Ya sea que necesites contenido para tu sitio web, redes sociales o cualquier otra plataforma, ¡estamos aquí para ayudarte a destacarte!</p>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contactarnos</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Trabajos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </section>
+    <script>
+        let banner = document.querySelector('.banner')
+        let menutoggle = document.querySelector('.toggle')
+        
+        
+        menutoggle.onclick = function()
+        {
+            menutoggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
