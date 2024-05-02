@@ -488,3 +488,33 @@ main
 {
     scale: 1.05;
 }
+.redes_sociales
+{
+    display: flex;
+}
+.redes_sociales a
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    border: solid 1px #fff;
+}
+.redes_sociales li:nth-child(1):hover a
+{
+    border-color: #4267B2 ;
+    color: #4267B2 ;
+}
+.redes_sociales li:nth-child(2):hover a
+{
+    border-color: #E1306C;
+    color: #E1306C;
+}
+.redes_sociales li:nth-child(3):hover a
+{
+    border-color: #25D366;
+    color: #25D366;
+}
