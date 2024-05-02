@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+body
+{
+    background-color: #1C2029;
+}
+/*cabecera*/
+.cabecera
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(16px);
+}
+.cabecera_central
+{
+    width: 60%;
+    min-width: 320px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera_central a
+{
+    height: 100%;
+    
+}
+.cabecera_central a img
+{
+    height: 100%;
+}
+
+.menu
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: left 500ms ease-in-out;
+}
+.menu_item
+{
+    color: #fff;
+    margin: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.item_resaltado
+{
+    background-color: #0fd4e6;
+    padding:10px;
+    border-radius: 16px;
+}
+.buttonMenu
+{
+    display: none;
+}
+@media screen and (max-width:1000px) 
+{
+    
+    .menu
+    {
+        position: fixed;
+        top: 10vh;
+        left: 100%;
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #1C2029;
+    }
+    .buttonMenu
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 6vh;
+        height: 6vh;
+        border: solid 1px #fff;
+    }
+    .line
+    {
+        width: 80%;
+        height: 5%;
+        background-color: #fff;
+        transition: transform 500ms ease-in-out ;
+    }
+    .buttonMenu.active .luno 
+    {
+        transform: rotate(-45deg) translate(-1.3vh, 1.3vh);
+    }
+      
+    .buttonMenu.active .ldos
+    {
+        opacity: 0;
+    }
+      
+    .buttonMenu.active .ltres
+    {
+        transform: rotate(45deg) translate(-1.3vh, -1.3vh);
+    }
+}
+/*main*/
+main
+{
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*nosotros*/
+.nosotros
+{
+    width: 60%;
+    min-width: 340px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nosotros_cont
+{
+    
+    padding:20px;
+    margin: 4vh 0;
+    width: 50%;
+    min-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.nosotros_cont img
+{
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 30px #000);
+}
+.circulo
+{
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 80%;
+    background-color: #046380;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #046380, 0 0 50px #046380,
+    0 0 150px #046380;
+    animation: brillo 5s linear infinite;
+    transition: background-color 0.5s ease-in-out;
+}
+.nosotros_cont:nth-child(1):hover .circulo
+{
+    background-color: #0fd4e6;
+}
+@keyframes brillo
+{
+    0%
+    {
+        box-shadow: 
+        0 0 20px #046380, 
+        0 0 50px #046380,
+        0 0 150px #046380;
+    }
+    25%
+    {
+        box-shadow: 
+        0 0 30px #046380, 
+        0 0 60px #046380,
+        0 0 160px #046380;
+    }
+    50%
+    {
+        box-shadow: 
+        0 0 10px #046380, 
+        0 0 40px #046380,
+        0 0 140px #046380;
+    }
+    75%
+    {
+        box-shadow: 
+        0 0 40px #046380, 
+        0 0 70px #046380,
+        0 0 170px #046380;
+    }
+    100%
+    {
+        box-shadow: 
+        0 0 20px #046380, 
+        0 0 50px #046380,
+        0 0 150px #046380;
+    }
+}
+.nosotros_cont p
+{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+.nosotros_cont p span
+{
+    color: #0fd4e6;
+}
+.hola
+{
+    font-size: 26px;
+}
+/*ofrecemos*/
+.ofrecemos
+{
+    width: 60%;
+    width: 60%;
+    min-width: 340px;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.ofrecemos h2
+{
+    display: inline-block;
+    padding: 20px;
+    font-size: 3em;
+    line-height: 1em;
+    color: #fff;
+    position: relative;
+    margin: 10px 0;
+}
+.ofrecemos h2::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    content: ' ';
+    background: #0fd4e6;
+    width: 100%;
+    height: 100%;
+    transform: skew(20deg);
+}
+.ofrecemos p
+{
+    font-size: 1em;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+.ofrecemos p span
+{
+    color: #0fd4e6;
+    font-size: 26px;
+}
+.servicios
+{
+    width: 60%;
+    min-width: 340px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.servicios_cont
+{
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.servicio
+{
+    width: 300px;
+    height: 300px;
+    background-color: #046380;
+    border-radius: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: scale .5s ease-in-out;
+}
+.servicio i
+{
+    font-size: 30px;
+    color: #0fd4e6;
+    margin: 20px 0;
+}
+.servicio h4,.servicio p
+{
+    color: #fff;
+}
+.servicio p
+{
+    margin: 20px 0;
+}
+.servicio:hover
+{
+    scale: 1.1;
+}
+/*contacto*/
+.contacto
+{
+    width: 60%;
+    min-width: 340px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.contacto h3
+{
+    font-weight: 300;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+.contacto h2
+{
+    font-size: 4em;
+    line-height: 1em;
+    color: #0fd4e6;
+}
+.contacto a
+{
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+    padding: 20px 10px;
+    background: linear-gradient(90deg,#046380 0%, #0fd4e6 80%);
+    border-radius: 16px;
+    transition: scale .5s ease-in-out;
+}
+.contacto a:hover
+{
+    scale: 1.05;
+}

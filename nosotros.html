@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://kit.fontawesome.com/c8bf7962f3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSOTROS - CONTENIDO CREATIVO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="cabecera_central">
+            <a href=""><img src="girl.png" alt="Logo"></a>
+            <nav class="menu">
+                <li class="menu_item">Inicio</li>
+                <li class="menu_item">Nosotros</li>
+                <li class="menu_item">Servicios</li>
+                <li class="menu_item">Trabajos</li>
+                <li class="menu_item">Blog</li>
+                <li class="menu_item item_resaltado">Contacto</li>
+            </nav>
+            <div class="buttonMenu">
+                <div class="line luno"></div>
+                <div class="line ldos"></div>
+                <div class="line ltres"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="nosotros">
+            <div class="nosotros_cont">
+                <img src="Perfil.png" alt="Perfil">
+                <div class="circulo"></div>
+            </div>
+            <div class="nosotros_cont">
+                <p><span class="hola">¡Hola!</span> Soy <span>Fabian Politis</span>, un emprendedor apasionado por el
+                    mundo del marketing digital y las palabras. Con una sólida formación en <span>Marketing</span>,
+                    especializado en <span>Inbound Marketing</span>, <span>Copywriting</span>, <span>SEO</span> y
+                    <span>Redacción de Contenidos</span>, he dedicado mi carrera a ayudar a otros emprendedores a
+                    alcanzar el éxito en el mundo digital.</p>
+                <p>Mi trayectoria profesional comenzó como <span>Community Manager</span> y ha evolucionado hasta
+                    convertirme en un reconocido dramaturgo con varias obras premiadas. Para mí, las palabras son la
+                    herramienta más poderosa para conectar con las personas y hacer crecer negocios.</p>
+            </div>
+        </section>
+        <section class="ofrecemos">
+            <h2>Te Ofrecemos</h2>
+            <p>En <span>Contenido Creativo</span>, entendemos que cada emprendimiento es único y tiene necesidades
+                específicas. Es por eso que ofrecemos soluciones digitales personalizadas y modulares para ayudarte a
+                crecer en el mundo digital. Nuestro enfoque se basa en establecer un vínculo personal contigo, realizar
+                un análisis exhaustivo de tu situación y ofrecerte estrategias de crecimiento adaptadas a tus
+                necesidades y presupuesto.</p>
+        </section>
+        <section class="servicios">
+            <div class="servicios_cont">
+                <div class="servicio">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Análisis de Situación</h4>
+                    <p>Comprendemos tu negocio y tus objetivos para diseñar estrategias efectivas.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Análisis de Situación</h4>
+                    <p>Atraemos, convertimos, cerramos y deleitamos a tus clientes para que tu negocio crezca de manera
+                        sostenible.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fas fa-pen-alt"></i>
+                    <h4>Copywriting y Redacción de Contenidos</h4>
+                    <p> Atraemos, convertimos, cerramos y deleitamos a tus clientes para que tu negocio crezca de manera
+                        sostenible.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>SEO</h4>
+                    <p>Mejoramos tu posicionamiento en los motores de búsqueda para que más personas encuentren tu
+                        negocio en línea.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <h2>¿Estás listo para hacer crecer tu negocio en el mundo digital?</h2>
+            <h3>¡Ponte en contacto conmigo y juntos vamos a encontrar la mejor estrategia para ti!</h3>
+            <a href="#">Contactarnos</a>
+        </section>
+    </main>
+</body>
+<script src="slideMenu.js"></script>
+<script>
+    const array = ['/', 'nosotros.html', 'servicios.html', 'trabajos.html', 'blog.html', 'contacto.html']
+    const opciones = document.querySelectorAll(".menu_item");
+    opciones.forEach((opcion, index) => {
+        opcion.addEventListener("click", () => {
+            window.location.href = array[index];
+        });
+    });
+</script>
+
+</html>
