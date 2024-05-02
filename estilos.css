@@ -123,6 +123,7 @@ main
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 /*nosotros*/
 .nosotros
@@ -313,6 +314,30 @@ main
 {
     scale: 1.1;
 }
+
+.servicios h2
+{
+    display: inline-block;
+    padding: 20px;
+    font-size: 3em;
+    line-height: 1em;
+    color: #fff;
+    position: relative;
+    margin: 10px 0;
+}
+.servicios h2::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    content: ' ';
+    background: #0fd4e6;
+    width: 100%;
+    height: 100%;
+    transform: skew(20deg);
+}
 /*contacto*/
 .contacto
 {
@@ -349,4 +374,66 @@ main
 .contacto a:hover
 {
     scale: 1.05;
+}
+/*trabajos*/
+.trabajos
+{
+    width: 60%;
+    min-width: 340px;
+    border: solid 1px red;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.trabajos h2
+{
+    display: inline-block;
+    padding: 20px;
+    font-size: 3em;
+    line-height: 1em;
+    color: #fff;
+    position: relative;
+    margin: 10px 0;
+}
+.trabajos h2::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    content: ' ';
+    background: #0fd4e6;
+    width: 100%;
+    height: 100%;
+    transform: skew(20deg);
+}
+.trabajos h3
+{
+    font-weight: 300;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+
+.trabajos_cont
+{
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.trabajo
+{
+    width: 300px;
+    height: 300px;
+    background-color: #046380;
+    border-radius: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: scale .5s ease-in-out;
+}
+.trabajo:hover
+{
+    scale: 1.1;
 }
