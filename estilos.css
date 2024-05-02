@@ -346,6 +346,9 @@ main
     padding: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contacto h3
 {
@@ -435,4 +438,53 @@ main
 .trabajo:hover
 {
     scale: 1.1;
+}
+/*formulario*/
+.formulario
+{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    min-width: 300px;
+    background-color: rgba(45, 45, 57, 0.5);
+    border-radius: 16px;
+}
+.formulario label
+{
+    color: #0fd4e6;
+    margin: 10px 0;
+}
+.formulario input
+{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.formulario textarea
+{
+    padding: 10px;
+    border: solid 1px #fff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 12px;
+    color: #fff;
+}
+.formulario button
+{
+    width:260px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border: none;
+    background: linear-gradient(90deg,#046380 0%, #0fd4e6 80%);
+    color: #fff;
+    transition: scale .5s ease-in-out;
+    cursor: pointer;
+}
+.formulario button:hover
+{
+    scale: 1.05;
 }
